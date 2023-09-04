@@ -20,9 +20,12 @@ const config: PlaywrightTestConfig = {
     //     //     use: { ...devices['Desktop Safari'] },
     //     // },
     // ],
+
+    testMatch: ["tests/azure.spec.ts"],
     use: {
         viewport: null,
         headless: !true,
+        
         // browserName: "chromium",
         screenshot: "on",
         video: "on",
