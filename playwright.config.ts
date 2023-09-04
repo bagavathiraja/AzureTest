@@ -21,7 +21,7 @@ const config: PlaywrightTestConfig = {
     //     // },
     // ],
 
-   testMatch: ["azure.spec.ts"],
+//   testMatch: ["azure.spec.ts"],
     use: {
         viewport: null,
         headless: !true,
