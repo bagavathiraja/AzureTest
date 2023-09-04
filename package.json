@@ -4,7 +4,7 @@
 "description": "",
 "main": "index.js",
 "scripts": {
-"test:playwright": "playwright test"
+"test:playwright": "playwright test azure.spec.ts"
 },
 "keywords": [],
 "author": "",
