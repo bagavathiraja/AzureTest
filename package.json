@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {"test": "npx playwright test azure.spec.ts"},
+  "scripts": {"testing": "npx playwright test azure.spec.ts"},
   "keywords": [],
   "author": "",
   "license": "ISC",
