@@ -17,7 +17,8 @@ jobs:
         inputs:
           versionSpec: "16.x"
         displayName: "Install Node.js"
- 
+      - task : CacheBeta@1
+      
       - script: |
           npm ci
         displayName: "Install dependencies"
