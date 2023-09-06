@@ -17,6 +17,8 @@ jobs:
         inputs:
           versionSpec: "16.x"
         displayName: "Install Node.js"
+        
+      - task: Cache@2
  
       - script: |
           npm ci
