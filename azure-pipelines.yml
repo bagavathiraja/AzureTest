@@ -22,7 +22,7 @@ jobs:
       - script: |
           npm ci
         displayName: "Install dependencies"
-        
+
       - script: |
           npx playwright install
         displayName: "Install Playwright Browsers"
@@ -33,11 +33,3 @@ jobs:
 
       - publish: $(System.DefaultWorkingDirectory)/playwright-report
         artifact: playwright-report
-
-      # Cache Node.js modules to speed up builds
-      - task: CacheBeta@2
-        inputs:
-          key: 'npm | "$(Agent.OS)" | package-lock.json'
-          path: $(npm_config_cache)
-          cacheHitVar: CACHE_RESTORED
-        displayName: 'Cache Node.js modules'
