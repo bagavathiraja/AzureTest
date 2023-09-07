@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {"testazure": "playwright test"},
+  "scripts": {"testazure": "npx playwright test"},
   "keywords": [],
   "author": "",
   "license": "ISC",
