@@ -24,7 +24,7 @@ jobs:
         displayName: "Install dependencies"
 
       - script: |
-          npx playwright install
+          npm playwright install
         displayName: "Install Playwright Browsers"
 
       - script: |
