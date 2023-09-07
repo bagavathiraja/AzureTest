@@ -1,4 +1,5 @@
-name: Playwright Test
+name: Playwright Tests
+
 variables:
   CI: true
 
