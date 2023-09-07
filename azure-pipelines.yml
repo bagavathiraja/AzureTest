@@ -24,7 +24,7 @@ jobs:
         displayName: "Install dependencies"
 
       - script: |
-          npm playwright install
+          npm init playwright@latest
         displayName: "Install Playwright Browsers"
 
       - script: |
