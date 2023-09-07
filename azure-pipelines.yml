@@ -1,37 +1,35 @@
 name: Playwright Tests
- 
+
 variables:
   CI: true
- 
+
 trigger:
   - main
- 
+
 jobs:
   - job: test
     timeoutInMinutes: 60
     pool:
       vmImage: "ubuntu-latest"
- 
+
     steps:
-      - task: Node@0
+      - task: UseNode@1
         inputs:
           versionSpec: "16.x"
+          checkLatest: true
         displayName: "Install Node.js"
-        
-      - task: CacheBeta@1
- 
+
       - script: |
           npm ci
         displayName: "Install dependencies"
- 
+
       - script: |
-          npx playwright install --with-deps
+          npx playwright install
         displayName: "Install Playwright Browsers"
- 
+
       - script: |
           npx playwright test tests/UATQuiklyzflow.spec.ts
         displayName: "Run Playwright tests"
- 
+
       - publish: $(System.DefaultWorkingDirectory)/playwright-report
         artifact: playwright-report
-        condition: always()
