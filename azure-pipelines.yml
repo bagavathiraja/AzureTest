@@ -28,7 +28,7 @@ jobs:
         displayName: "Install Playwright Browsers"
 
       - script: |
-          npx playwright test tests/UATQuiklyzflow.spec.ts
+          run testing
         displayName: "Run Playwright tests"
 
       - publish: $(System.DefaultWorkingDirectory)/playwright-report
