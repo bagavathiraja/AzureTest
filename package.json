@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {"testazure": "npx playwright test --config=playwright.config.ts --project=chromium"},
+  "scripts": {"tests": "npx playwright test --config=playwright.config.ts --project=chromium"},
   "keywords": [],
   "author": "",
   "license": "ISC",
